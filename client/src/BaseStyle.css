@@ -51,16 +51,14 @@ html, body, #root{
     }
     .InfoMobile{
         width: 125px;
-    }
-    .InfoMobile:hover{
-        background-color: cornflowerblue;
+        padding-top: 20px;
     }
     .CrearReserva .Container{
         width: 100% !important;
     }
     
     .CrearReserva .Reservar{
-        margin-top: 40%;
+        margin-top: 30%;
     }
     .AboutUs{
         top: 220% !important;
@@ -291,7 +289,7 @@ p{
 }
 
 .Showroom .Container{
-    margin:5% 5% 5% 0;
+    margin:3% 5% 5% 0;
 }
 
 .Galeria{
@@ -302,7 +300,7 @@ p{
 
 .Galeria div{
     display: inline-flex;
-    padding-top: 3%;
+    padding-top: 10px;
     overflow: auto;
 }
 
@@ -312,11 +310,11 @@ p{
 }
 
 .Showroom img{
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 590px;
     margin: 15px;
     border-radius: 5px;
-    box-shadow: 0px 0px 17px 5px;
+    box-shadow: 0px 0px 13px 2px;
 }
 
 .FlechaGaleria{
