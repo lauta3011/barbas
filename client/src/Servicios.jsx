@@ -18,7 +18,7 @@ class Servicios extends Component {
                         <CrearReserva handleCreateReservation={this.createReservation}/>
                         <Model handleAddService={this.addService} handleRemoveService={this.removeService}/>
                         
-                        <ModelMobile/>  
+                        <ModelMobile handleAddService={this.addService} handleRemoveService={this.removeService}/>  
                     </div>
                 </div>
             </div>
