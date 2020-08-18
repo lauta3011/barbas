@@ -31,6 +31,18 @@ html, body, #root{
 /* started media queries  */
 
 @media (max-width: 700px){
+    #root{
+        height: 128% !important;
+    }
+    .Header, .Servicios, .AboutUs, .Showroom, .Footer{
+        width: 128% !important;
+    }
+    .Container{
+        width: 100% !important;
+    }
+    .Header{
+        width: 100%;
+    }
     .Logo{
         padding-top: 50%
     }
@@ -44,14 +56,17 @@ html, body, #root{
         position: absolute;
         top: 75%;
         z-index: 1;
+        width: 100% !important;
         text-align: center;
         display: inline-flex;
-        padding-left: 11%;
+        padding-left: 13%;
         padding-right: 11%;
     }
     .InfoMobile{
         width: 125px;
         padding-top: 20px;
+        border-radius: 5px;
+        margin: 1px;
     }
     .CrearReserva .Container{
         width: 100% !important;
