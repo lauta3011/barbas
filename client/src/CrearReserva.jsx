@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
 import Reservar from './Reservar';
+import ModelMobile from './ModelMobile';
 import 'react-calendar/dist/Calendar.css';
 import './BaseStyle.css';
 
@@ -78,6 +79,7 @@ class CrearReserva extends Component {
 
                         <input type="text" placeholder="Ingresa tu nombre" value={this.state.name} onChange={e => this.updateName(e)}/><br/>
                         <input type="text" placeholder="Ingresa tu celular" value={this.state.phone} onChange={e => this.updatePhone(e)}/>
+                        <ModelMobile handleAddService={this.props.handleAddService} handleRemoveService={this.props.handleRemoveService}/>  
                         <Reservar handleReservation={() => this.handleCreateReservation(this.state.name, this.state.phone, this.state.date, this.state.hour, this.state.min)}/>
                     </div>          
                 </div>
