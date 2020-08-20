@@ -49,7 +49,7 @@ html, body, #root{
         padding-top: 50%
     }
     .Servicios{
-        height: 110% !important;
+        height: 120% !important;
     }
     .Container .title, .react-calendar, .inputs, .inputs .timePicker, input[type=text]{
         width: 100% !important;
@@ -88,31 +88,17 @@ html, body, #root{
         width: 100% !important;
     }
     .AboutUs{
-        top: 210% !important;
+        top: 220% !important;
     }
     .AboutUs .title{
         width: 80% !important;
         left: 10% !important;
     }
     .Showroom{
-        top: 310% !important;
+        top: 320% !important;
     }
-    .Showroom .Container{
-        margin: 12% 5% 5% 0 !important;
-    }
-    .Galeria{
-        overflow: scroll !important;
-        margin-left: 0 !important;
-    }
-    .Galeria .FlechaGaleria{
-        display: none !important;
-    }
-    .Showroom img{
-        width: 460px !important;
-        height: 510px !important;
-    } 
     .Footer{
-        top: 410% !important;
+        top: 420% !important;
     }
     .Footer .Logo{
         width: 40% !important;
@@ -125,14 +111,11 @@ html, body, #root{
         margin-top: 0 !important;
     }
     .Footer h3{
-        margin-top: 45% !important;
+        margin-top: 35% !important;
     }
 }
-/* media queries ended  */
 
-.ModelMobile{
-    display: none;
-}
+    /* media queries ended  */
 
 .Logo h3{
     font-size: 90%;
@@ -374,7 +357,7 @@ p{
 .Footer{
     position: absolute;
     width: 100%;
-    height: 31%;
+    height: 30%;
     top: 400%;
     background-color: black;
 }
