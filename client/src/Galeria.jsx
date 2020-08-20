@@ -6,7 +6,6 @@ class Galeria extends Component {
     state = { 
         images : this.props.images
      }
-
     render() { 
         return (  
         <div className="Galeria">
@@ -16,6 +15,7 @@ class Galeria extends Component {
                     ))}
                 </div>
             </div> 
+
             <FlechaGaleria clickHandler={() => this.scrollGalery("<")} arrow="<" left="2%"/>
             <FlechaGaleria clickHandler={() => this.scrollGalery(">")} arrow=">" left="95%"/>
         </div>

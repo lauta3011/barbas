@@ -74,8 +74,6 @@ html, body, #root{
     .InfoMobile{
         width: 33%;
         padding-top: 20px;
-        border-radius: 5px;
-        margin: 1px;
     }
     .CrearReserva .Container{
         width: 100% !important;
