@@ -63,7 +63,6 @@ html, body, #root{
         display: none;
     }
     .ModelMobile{
-<<<<<<< HEAD
         margin-top: 50px;
         z-index: 2;
         width: 100% !important;
@@ -71,16 +70,6 @@ html, body, #root{
         display: inline-flex !important;
         padding-left: 15px;
         padding-right: 15px;
-=======
-        position: absolute;
-        top: 75%;
-        z-index: 1;
-        width: 100% !important;
-        text-align: center;
-        display: inline-flex;
-        padding-left: 13%;
-        padding-right: 11%;
->>>>>>> parent of 2b1aa1a... Merge pull request #9 from lauta3011/customizing-mobile-components
     }
     .InfoMobile{
         width: 33%;
@@ -93,14 +82,10 @@ html, body, #root{
     }
     
     .CrearReserva .Reservar{
-<<<<<<< HEAD
         margin-top: 50px;
     }
     .CrearReserva .Reservar button{
         width: 100% !important;
-=======
-        margin-top: 30%;
->>>>>>> parent of 2b1aa1a... Merge pull request #9 from lauta3011/customizing-mobile-components
     }
     .AboutUs{
         top: 220% !important;
@@ -109,12 +94,6 @@ html, body, #root{
         width: 80% !important;
         left: 10% !important;
     }
-<<<<<<< HEAD
-=======
-    .AboutUs .title h3{
-        padding-top: 100% !important;
-    }
->>>>>>> parent of 2b1aa1a... Merge pull request #9 from lauta3011/customizing-mobile-components
     .Showroom{
         top: 320% !important;
     }
