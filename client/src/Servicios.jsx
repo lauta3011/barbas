@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CrearReserva from './CrearReserva';
 import Model from './Model';
-import ModelMobile from './ModelMobile';
 import axios from 'axios';
 
 class Servicios extends Component {
@@ -15,10 +14,10 @@ class Servicios extends Component {
             <div className="Servicios">
                 <div>
                     <div style={{height:"100%",width:"100%",position:"absolute"}}>    
-                        <CrearReserva handleCreateReservation={this.createReservation}/>
+                        
+                        <CrearReserva handleAddService={this.addService} handleRemoveService={this.removeService} handleCreateReservation={this.createReservation}/>
                         <Model handleAddService={this.addService} handleRemoveService={this.removeService}/>
                         
-                        <ModelMobile handleAddService={this.addService} handleRemoveService={this.removeService}/>  
                     </div>
                 </div>
             </div>
