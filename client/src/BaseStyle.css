@@ -95,6 +95,16 @@ html, body, #root{
     .Showroom{
         top: 320% !important;
     }
+    .Galeria{
+        overflow: scroll !important;
+        margin-left: 0 !important;
+    }
+    .Showroom .Container{
+        margin: 15% 5% 5% 0 !important;
+    }
+    .FlechaGaleria{
+        display: none !important;
+    }
     .Footer{
         top: 420% !important;
     }
@@ -139,6 +149,14 @@ html, body, #root{
 .Reservar button:hover{
     padding: 22px 11px 22px 11px;
     box-shadow: 0px 7px 20px 1px #262626;
+}
+.ModelMobile{
+    display: none;
+}
+
+.InfoMobile{
+    margin: 2px;
+    border-radius: 5px;
 }
 
 .Servicios{
