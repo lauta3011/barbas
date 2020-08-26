@@ -13,10 +13,13 @@ class App extends Component {
         return (  
             <div>
                 <Header />
-                <Servicios />
-                <AboutUs />
-                <Showroom />
-                <Footer />
+                
+                <div className="ComponentContainer">
+                    <Servicios />
+                    <AboutUs />
+                    <Showroom />
+                    <Footer />
+                </div>
                 <img src={background} alt="background" style={{width:"100%", height:"120%",position:"fixed",zIndex:"-1",filter:"blur(5px)"}}/>
             </div>
         );
