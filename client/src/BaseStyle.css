@@ -215,7 +215,7 @@ p{
     text-align: center;
 }
 
-select{
+select, input{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
