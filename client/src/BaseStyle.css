@@ -84,10 +84,10 @@ html, body, #root{
         width: 100% !important;
     }
     
-    .CrearReserva .Reservar{
+    .CrearReserva .Book{
         margin-top: 50px;
     }
-    .CrearReserva .Reservar button{
+    .CrearReserva .Book button{
         width: 100% !important;
     }
     .ShowReservation .Container{
@@ -121,7 +121,7 @@ html, body, #root{
     .Showroom .Container{
         margin: 15% 5% 5% 0 !important;
     }
-    .FlechaGaleria{
+    .Arrow{
         display: none !important;
     }
     .Footer{
@@ -154,7 +154,7 @@ html, body, #root{
     padding-left: 10px;;
 }
 
-.Reservar button{
+.Book button{
     background-color: #262626;
     border: none;
     border-radius: 5px;
@@ -165,7 +165,7 @@ html, body, #root{
     transition: 0.5s;
 }
 
-.Reservar button:hover{
+.Book button:hover{
     padding: 22px 11px 22px 11px;
     box-shadow: 0px 7px 20px 1px #262626;
 }
@@ -218,7 +218,7 @@ html, body, #root{
     opacity: 0.5;
 }
 
-.CrearReserva input, .Reservar button{
+.CrearReserva input, .Book button{
     width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -433,12 +433,12 @@ select{
     box-shadow: 0px 0px 13px 2px;
 }
 
-.FlechaGaleria{
+.Arrow{
     position: absolute;
     top: 50%;
 }
 
-.FlechaGaleria button{
+.Arrow button{
     border: none;
     border-radius: 50%;
     padding: 15px 20px 15px 20px;
@@ -446,7 +446,7 @@ select{
     transition: 0.5s;
 }
 
-.FlechaGaleria button:hover{
+.Arrow button:hover{
     opacity: 1;
 }
 

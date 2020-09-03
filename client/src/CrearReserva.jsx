@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
-import Reservar from './Reservar';
+import Reservar from './Book';
 import ModelMobile from './ModelMobile';
 import 'react-calendar/dist/Calendar.css';
 import './BaseStyle.css';
