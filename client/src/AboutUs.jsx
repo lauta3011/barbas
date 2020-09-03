@@ -9,7 +9,7 @@ class AboutUs extends Component {
                 <div className="Container">
                     <div className="title">
                         <h2>DONDE PODES ENCONTRARNOS</h2>
-                        <p>estamos localizados en el centro de Pan de Azucar, en feliz de lisarza y no se que mierda para ser exacto</p>
+                        <p>estamos localizados en el centro de Pan de Azucar, en Felix de Liszarza e Ituzaingo</p>
                         <MapContainer /><br />
                         <h3>TAMBIEN PODES LLAMAR AL 095491017</h3>         
                     </div>

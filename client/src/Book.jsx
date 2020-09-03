@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Reservar extends Component {
+class Book extends Component {
     state = {  }
     render() { 
         return (  
-            <div className="Reservar">
+            <div className="Book">
                 <button onClick={this.props.handleReservation} value="RESERVAR">RESERVAR</button>
             </div>
         );
@@ -12,4 +12,4 @@ class Reservar extends Component {
 
 }
  
-export default Reservar;
+export default Book;

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-class FlechaGaleria extends Component {
+class Arrow extends Component {
     state = {  }
     render() { 
         return (  
-            <div className="FlechaGaleria" style={{left:this.props.left}}>
+            <div className="Arrow" style={{left:this.props.left}}>
                 <button onClick={this.props.clickHandler}>{this.props.arrow}</button>
             </div>
         );
     }
 }
  
-export default FlechaGaleria;
+export default Arrow;

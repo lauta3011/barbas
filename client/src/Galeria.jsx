@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FlechaGaleria from './FlechaGaleria';
+import FlechaGaleria from './Arrow';
 import Image from './Image';
 
 class Galeria extends Component {
