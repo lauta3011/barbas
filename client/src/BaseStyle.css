@@ -90,6 +90,18 @@ html, body, #root{
     .CrearReserva .Reservar button{
         width: 100% !important;
     }
+    .ShowReservation .Container{
+        top: 10% !important;
+        left: 10% !important;
+        height: 50% !important;
+        width: 80% !important;
+    }
+    .ShowReservation .Container p{
+        font-size: 25px;
+        margin-bottom: 150px;
+        text-align: justify;
+        padding: 0 20px 0 20px;
+    }
     .AboutUs{
         top: 1200px !important;
         height: 1000px !important;
@@ -187,11 +199,11 @@ html, body, #root{
     position: absolute;
     z-index: 1;
     background-color: white;
-    top: 20% !important;
-    left: 40% !important;
+    top: 20% ;
+    left: 40% ;
     height: 250px;
     padding: 15px;
-    box-shadow: 0px 0px 25px 7px;
+    box-shadow: 0px 0px 20px 0px;
     border-radius: 5px;
 }
 
@@ -284,7 +296,7 @@ select{
 .react-calendar{
     margin-top: 4%;
     margin-left: 80px;
-    width: 75% !important;
+    width: 75% ;
     border: none !important;
 }
 
