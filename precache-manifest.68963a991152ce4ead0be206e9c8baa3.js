@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4470535f3588c25262c0fc9247627f2",
+    "revision": "cce16a102723139dc3e3e8237746bb85",
     "url": "/barbas/index.html"
   },
   {
-    "revision": "65c4a298a55b2fa64134",
+    "revision": "8a836e7f113ffcd4cd11",
     "url": "/barbas/static/css/2.8dbe6964.chunk.css"
   },
   {
-    "revision": "0d180880dfa99c36ce7c",
-    "url": "/barbas/static/css/main.c9fff2d5.chunk.css"
+    "revision": "fea83c0ff8fc5f6ea71a",
+    "url": "/barbas/static/css/main.ed32f92b.chunk.css"
   },
   {
-    "revision": "65c4a298a55b2fa64134",
-    "url": "/barbas/static/js/2.14e62d74.chunk.js"
+    "revision": "8a836e7f113ffcd4cd11",
+    "url": "/barbas/static/js/2.0b35b06b.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/barbas/static/js/2.14e62d74.chunk.js.LICENSE.txt"
+    "url": "/barbas/static/js/2.0b35b06b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d180880dfa99c36ce7c",
-    "url": "/barbas/static/js/main.ffa5cbf0.chunk.js"
+    "revision": "fea83c0ff8fc5f6ea71a",
+    "url": "/barbas/static/js/main.17375e6c.chunk.js"
   },
   {
     "revision": "b34a2da0fea88706a5b8",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "95dd899efae88ee1125ae70a3f8688f8",
     "url": "/barbas/static/media/background-img.95dd899e.JPG"
+  },
+  {
+    "revision": "dcb21f7aa647a09033aae1e3daf39680",
+    "url": "/barbas/static/media/barbas-logo.dcb21f7a.png"
   },
   {
     "revision": "d9d9aaff181edf1babd9d3fd9834007a",

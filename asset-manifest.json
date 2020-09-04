@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/barbas/static/css/main.c9fff2d5.chunk.css",
-    "main.js": "/barbas/static/js/main.ffa5cbf0.chunk.js",
-    "main.js.map": "/barbas/static/js/main.ffa5cbf0.chunk.js.map",
+    "main.css": "/barbas/static/css/main.ed32f92b.chunk.css",
+    "main.js": "/barbas/static/js/main.17375e6c.chunk.js",
+    "main.js.map": "/barbas/static/js/main.17375e6c.chunk.js.map",
     "runtime-main.js": "/barbas/static/js/runtime-main.f11d7e36.js",
     "runtime-main.js.map": "/barbas/static/js/runtime-main.f11d7e36.js.map",
     "static/css/2.8dbe6964.chunk.css": "/barbas/static/css/2.8dbe6964.chunk.css",
-    "static/js/2.14e62d74.chunk.js": "/barbas/static/js/2.14e62d74.chunk.js",
-    "static/js/2.14e62d74.chunk.js.map": "/barbas/static/js/2.14e62d74.chunk.js.map",
+    "static/js/2.0b35b06b.chunk.js": "/barbas/static/js/2.0b35b06b.chunk.js",
+    "static/js/2.0b35b06b.chunk.js.map": "/barbas/static/js/2.0b35b06b.chunk.js.map",
     "index.html": "/barbas/index.html",
-    "precache-manifest.3d78c191f5997a596d41bef348e9d304.js": "/barbas/precache-manifest.3d78c191f5997a596d41bef348e9d304.js",
+    "precache-manifest.68963a991152ce4ead0be206e9c8baa3.js": "/barbas/precache-manifest.68963a991152ce4ead0be206e9c8baa3.js",
     "service-worker.js": "/barbas/service-worker.js",
     "static/css/2.8dbe6964.chunk.css.map": "/barbas/static/css/2.8dbe6964.chunk.css.map",
-    "static/css/main.c9fff2d5.chunk.css.map": "/barbas/static/css/main.c9fff2d5.chunk.css.map",
-    "static/js/2.14e62d74.chunk.js.LICENSE.txt": "/barbas/static/js/2.14e62d74.chunk.js.LICENSE.txt",
+    "static/css/main.ed32f92b.chunk.css.map": "/barbas/static/css/main.ed32f92b.chunk.css.map",
+    "static/js/2.0b35b06b.chunk.js.LICENSE.txt": "/barbas/static/js/2.0b35b06b.chunk.js.LICENSE.txt",
     "static/media/background-img.JPG": "/barbas/static/media/background-img.95dd899e.JPG",
+    "static/media/barbas-logo.png": "/barbas/static/media/barbas-logo.dcb21f7a.png",
     "static/media/beardedMen.svg": "/barbas/static/media/beardedMen.d9d9aaff.svg",
     "static/media/header-img.JPEG": "/barbas/static/media/header-img.791f5fd7.JPEG",
     "static/media/img1.jpg": "/barbas/static/media/img1.8e2d1db9.jpg",
@@ -27,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.f11d7e36.js",
     "static/css/2.8dbe6964.chunk.css",
-    "static/js/2.14e62d74.chunk.js",
-    "static/css/main.c9fff2d5.chunk.css",
-    "static/js/main.ffa5cbf0.chunk.js"
+    "static/js/2.0b35b06b.chunk.js",
+    "static/css/main.ed32f92b.chunk.css",
+    "static/js/main.17375e6c.chunk.js"
   ]
 }
