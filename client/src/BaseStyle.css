@@ -22,13 +22,51 @@ html, body, #root{
 }
 
 .Logo{
-    padding-top: 10%;
     position: absolute;
-    text-align: center;
+    top: 30%;
+    left: 45%;
     color:white;
 }
 
+.Logo div{
+    width: 150px;
+    text-align: center;
+}
+
+.ComponentContainer{
+    position: absolute;
+    top:100%;
+    width: 100%;
+}
+
+.Logo h3{
+    font-size: 90%;
+}
+
+.Logo img{
+    width: 150px;
+}
+
 /* started media queries  */
+@media (max-width: 1250px){
+    .model{
+        position: absolute;
+        top:30px;
+        margin-left: 95px !important;
+        width: 80% !important;
+    }
+    .cortePelo{
+        left: 25% !important;
+    }
+    .barba{
+        top: 350px !important;
+        left: 250px !important;
+    }
+    .cejas{
+        top:280px !important;
+        left:20% !important;
+    }
+}
 
 @media (max-width: 800px){
     #root{
@@ -46,12 +84,8 @@ html, body, #root{
         width: 100%;
     }
     .Logo{
-        padding-top: 35%
-    }
-    .ComponentContainer{
-        position: absolute;
-        top:100%;
-        width: 100%;
+        padding-top: 35%;
+        padding-left: 10%;
     }
     .Servicios{
         height: 1201px !important;
@@ -82,6 +116,8 @@ html, body, #root{
     }
     .CrearReserva .Container{
         width: 100% !important;
+        height: 1201px !important;
+        position: relative !important;
     }
     
     .CrearReserva .Book{
@@ -144,16 +180,6 @@ html, body, #root{
 
     /* media queries ended  */
 
-.Logo h3{
-    font-size: 90%;
-}
-
-.Logo img{
-    width: 20%;
-    filter:invert(1);
-    padding-left: 10px;;
-}
-
 .Book button{
     background-color: #262626;
     border: none;
@@ -179,9 +205,7 @@ html, body, #root{
 }
 
 .Servicios{
-    position: absolute;
-    top: 100%;
-    height: 100%;
+    height: 800px;
     width: 100%;
 }
 
@@ -226,7 +250,7 @@ html, body, #root{
 
 .CrearReserva .Container{
     width: 31%;
-    height: 100%;
+    height: 800px;
     position: absolute;
     z-index: 1;
     background-color: white;
@@ -296,7 +320,7 @@ select{
 .react-calendar{
     margin-top: 4%;
     margin-left: 80px;
-    width: 75% ;
+    width: 70% !important;
     border: none !important;
 }
 
@@ -365,9 +389,7 @@ select{
 }
 
 .AboutUs{
-    position: absolute;
-    top: 200%;
-    height: 100%;
+    height: 800px;
     width: 100%;
 
 }
@@ -396,9 +418,7 @@ select{
 }
 
 .Showroom{
-    position: absolute;
-    top: 300%;
-    height: 100%;
+    height: 800px;
     width: 100%;
     overflow: hidden;
     z-index: 1;
@@ -453,13 +473,12 @@ select{
 .Footer{
     position: absolute;
     width: 100%;
-    top: 400%;
     background-color: black;
 }
 
 .Footer .Logo{
-    width: 20%;
-    padding: 30px;
+    left: 1%;
+    top: 10%;
 }
 
 .Footer .Logo img{

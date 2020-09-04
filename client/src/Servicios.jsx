@@ -16,7 +16,7 @@ class Servicios extends Component {
      
     render() { 
         return ( 
-            <div className="Servicios" style={{height:"100%",width:"100%",position:"absolute"}}>
+            <div className="Servicios">
                 <ShowReservation handleHideModal={this.hideModal} handleShowModal={this.state.showModal} name={this.state.name} date={this.state.date} time={this.state.time}/>
                 <CrearReserva handleAddService={this.addService} handleRemoveService={this.removeService} handleCreateReservation={this.createReservation}/>
                 <Model handleAddService={this.addService} handleRemoveService={this.removeService}/>                    
