@@ -8,7 +8,7 @@ class ShowReservation extends Component {
                 <div className="Container">
                     <h1>Reserva confirmada</h1><br/>                    
                     <p>{this.props.name}, reservaste turno para el dia {this.props.date} a la hora {this.props.time}.</p>
-                    <div className="Reservar" >
+                    <div className="Book" >
                         <button onClick={this.props.handleHideModal} value="LISTO">LISTO</button>
                     </div>
                 </div>
