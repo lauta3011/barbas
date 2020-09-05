@@ -35,7 +35,7 @@ html, body, #root{
 
 .ComponentContainer{
     position: absolute;
-    top:95%;
+    top:100%;
     width: 100%;
 }
 
@@ -71,6 +71,9 @@ html, body, #root{
 @media (max-width: 800px){
     #root{
         height: 128% !important;
+    }
+    .ComponentContainer{
+        top:95% !important;
     }
     .Header, .Servicios, .AboutUs, .Showroom, .Footer{
         width: 128% !important;
@@ -167,6 +170,11 @@ html, body, #root{
     }
     .Footer .Logo img{
         width: 60% !important;
+    }
+    .Footer .igLogo{
+        left: 85% !important;
+        top: 15%  !important;
+        width: 10% !important;
     }
     .Footer .Logo h3{
         margin-top: 0 !important;
@@ -481,6 +489,14 @@ select{
 
 .Footer .Logo img{
     width: 30%;
+}
+
+.Footer .igLogo{
+    filter: invert(1);
+    position: absolute !important;
+    width: 3%;
+    left: 95%;
+    top: 10%;
 }
 
 .Footer .Container .Logo h3{
