@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47994f345a877fb658bfeb710e3f62bb",
+    "revision": "96e49fd3657ccdacb933b8c44e2d1b98",
     "url": "/barbas/index.html"
   },
   {
-    "revision": "8a836e7f113ffcd4cd11",
+    "revision": "acd8bdd4f4f402e00bdb",
     "url": "/barbas/static/css/2.8dbe6964.chunk.css"
   },
   {
-    "revision": "8d250fb680ae9e46ee50",
-    "url": "/barbas/static/css/main.fe696674.chunk.css"
+    "revision": "6697a9fee3edfba12340",
+    "url": "/barbas/static/css/main.a3d96789.chunk.css"
   },
   {
-    "revision": "8a836e7f113ffcd4cd11",
-    "url": "/barbas/static/js/2.0b35b06b.chunk.js"
+    "revision": "acd8bdd4f4f402e00bdb",
+    "url": "/barbas/static/js/2.fb067a3d.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/barbas/static/js/2.0b35b06b.chunk.js.LICENSE.txt"
+    "url": "/barbas/static/js/2.fb067a3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8d250fb680ae9e46ee50",
-    "url": "/barbas/static/js/main.17375e6c.chunk.js"
+    "revision": "6697a9fee3edfba12340",
+    "url": "/barbas/static/js/main.e0b02df6.chunk.js"
   },
   {
     "revision": "b34a2da0fea88706a5b8",
