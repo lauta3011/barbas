@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
 
 class Info extends Component {
-    state = { 
+    state = {  
         checked : false
-     }
+    }
     render() { 
-        return (
+        return ( 
             <div className="Info">
-                <div onClick={this.checkService} className={this.props.serviceType} style={this.props.stylesheet}>
-                    <div>
-                        <input className="checkbox" type="checkbox" checked={this.state.checked} onChange={this.checkService} />
-                        <h3>{this.props.title}</h3>
-                        <p>{this.props.desc}</p>
-                    </div>
-                </div>
+                <p>{this.props.title} {this.props.desc} <input className="checkbox" checked={this.state.checked} type="checkbox" onChange={this.checkService}/></p>
             </div>
         );
     }
@@ -21,12 +15,14 @@ class Info extends Component {
     checkService = () =>{
         if(this.state.checked === false){
             this.setState({ checked: true});
-            this.props.isChecked();
+            this.props.handleCheckService(this.props.title, this.props.desc);
+            
         }else{
             this.setState({ checked: false});
-            this.props.isUnchecked();
+            this.props.handleUncheckService(this.props.title, this.props.desc);
         }
     }
+
 }
  
 export default Info;
