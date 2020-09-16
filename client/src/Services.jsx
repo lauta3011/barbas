@@ -28,12 +28,14 @@ class Servicios extends Component {
         this.setState({
             serviceType: [...this.state.serviceType, {title, price}]
         })
+        console.log(title, price);
     }
-
+    
     removeService = (title) =>{
         this.setState({serviceType: this.state.serviceType.filter(function(service) { 
             return service.title !== title
         })});
+        console.log(title);
     }
 
     hideModal = () => {

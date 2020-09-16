@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from "./Header";
-import Servicios from './Servicios';
+import Services from './Services';
 import Showroom from './Showroom';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
@@ -15,7 +15,7 @@ class App extends Component {
                 <Header />
                 
                 <div className="ComponentContainer">
-                    <Servicios />
+                    <Services />
                     <AboutUs />
                     <Showroom />
                     <Footer />

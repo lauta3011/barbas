@@ -55,14 +55,14 @@ html, body, #root{
         margin-left: 95px !important;
         width: 80% !important;
     }
-    .cortePelo{
+    .Pelo{
         left: 25% !important;
     }
-    .barba{
+    .Barba{
         top: 350px !important;
         left: 250px !important;
     }
-    .cejas{
+    .Cejas{
         top:280px !important;
         left:20% !important;
     }
@@ -330,19 +330,27 @@ select{
     border: none !important;
 }
 
-.Info .checkbox{
-    position: relative;
-    left: -45px;
-    width: 30px;
-    height: 30px;
-    top: -10px;
+.ListInfo .List{
+    width: 175px;
+    background-color: #ffffff;
+    padding: 5px 1px 1px 1px;
+    margin-top: -35px;
+    box-shadow: 0px 0px 17px 2px black;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .5s;
+    text-align: center;
 }
 
-.Info .cejas,.Info .cortePelo,.Info .barba{
+.ListInfo .Cejas,.ListInfo .Pelo,.ListInfo .Barba{
     position: absolute;
 }
 
-.Info .barba{
+.Cejas h2, .Pelo h2, .Barba h2{
+    transition: 0.5s;
+}
+
+.ListInfo .Barba{
     top:400px;
     left: 320px;
     width:250px;
@@ -350,16 +358,7 @@ select{
     transition: .5s;
 }
 
-.Info .barba div{
-    margin-left: -100px;
-    margin-top: 50px;
-}
-
-.Info .barba:hover{  
-    transform: translateY(-10px);
-}
-
-.Info .cortePelo{
+.ListInfo .Pelo{
     top:45px;
     left: 320px;
     height: 230px;
@@ -367,16 +366,7 @@ select{
     transition: .5s;
 }
 
-.Info .cortePelo div{
-    margin-left: 400px;
-    margin-top: 85px;
-}
-
-.Info .cortePelo:hover{  
-    transform: translateY(-10px);
-}
-
-.Info .cejas{
+.ListInfo .Cejas{
     top:325px;
     width:365px;
     height:70px;
@@ -384,14 +374,9 @@ select{
     transition: .5s;
 }
 
-.Info .cejas div{
-    margin-top:-90px;
-    width: 90px;
-    left: 320px;
-}
-
-.Info .cejas:hover{  
-    transform: translateY(-10px);
+.List .Info p:hover{
+    color: #000000;
+    font-weight: 400;
 }
 
 .AboutUs{

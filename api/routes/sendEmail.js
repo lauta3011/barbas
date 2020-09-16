@@ -28,8 +28,8 @@ router.post('/', function (req, res) {
     const servicesList = req.body.service;
     let services = '';
 
-    for(var i = 0; i < servicesList.length; i++){
-        services += servicesList[i].title + ' '; 
+    for(var i = 1; i < servicesList.length; i++){
+        services += servicesList[i].title + ', '; 
     }
 
     // setup email data with unicode symbols
