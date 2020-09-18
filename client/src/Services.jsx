@@ -8,6 +8,7 @@ class Servicios extends Component {
     state = { 
         showModal : 'none',
         name : '',
+        phone : '',
         date : '',
         time : '',
         serviceType : []
@@ -17,7 +18,7 @@ class Servicios extends Component {
     render() { 
         return ( 
             <div className="Servicios">
-                <ShowReservation handleHideModal={this.hideModal} handleShowModal={this.state.showModal} name={this.state.name} date={this.state.date} time={this.state.time}/>
+                <ShowReservation handleSendMessage={this.sendMessage} handleHideModal={this.hideModal} handleShowModal={this.state.showModal} name={this.state.name} date={this.state.date} time={this.state.time}/>
                 <CrearReserva handleAddService={this.addService} handleRemoveService={this.removeService} handleCreateReservation={this.createReservation}/>
                 <Model handleAddService={this.addService} handleRemoveService={this.removeService}/>                    
             </div>
@@ -45,20 +46,19 @@ class Servicios extends Component {
     createReservation = (name, phone, date, hour, min) => {
         let time = hour + " " + min;
         this.setState({ name : name});
+        this.setState({ phone : phone});
         this.setState({ date : date});
         this.setState({ time : time});
         
-        const info = { name: name, phone: phone, day: date, time: time, service: this.state.serviceType }
-        
         if(this.state.serviceType.length > 0){
             this.setState({ showModal : "initial"});
-            this.sendMessage(info);
         }
     }
 
-    sendMessage = (info) =>{   
+    sendMessage = () =>{   
+        const info = { name: this.state.name, phone: this.state.phone, day: this.state.date, time: this.state.time, service: this.state.serviceType }        
         const url = 'http://localhost:9000';
-
+console.log(info);
         axios.post(url + '/sendEmail ', info)
         .then((response)=>{
             if (response.data.msg === 'success'){

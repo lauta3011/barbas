@@ -185,6 +185,19 @@ html, body, #root{
 }
 
     /* media queries ended  */
+.ShowReservation .Cancel{
+    width: 45%;
+    margin-top: 30px;
+}
+
+.ShowReservation .Cancel:hover{
+    color: #000000;
+}
+
+.ShowReservation .Book{
+    width: 50%;
+
+}
 
 .Book button{
     background-color: #262626;

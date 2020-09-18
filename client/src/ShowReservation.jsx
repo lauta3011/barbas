@@ -8,9 +8,14 @@ class ShowReservation extends Component {
                 <div className="Container">
                     <h1>Reserva confirmada</h1><br/>                    
                     <p>{this.props.name}, reservaste turno para el dia {this.props.date} a la hora {this.props.time}.</p>
-                    <div className="Book" >
-                        <button onClick={this.props.handleHideModal} value="LISTO">LISTO</button>
+
+                    <div style={{"display":"flex"}}>
+                        <p className="Cancel" onClick={this.props.handleHideModal}>CANCELAR</p>
+                        <div className="Book" >
+                            <button onClick={() => {this.props.handleHideModal();this.props.handleSendMessage()}} value="LISTO">LISTO</button>
+                        </div>
                     </div>
+
                 </div>
                 <div className="ModalBackground"></div>
             </div>
