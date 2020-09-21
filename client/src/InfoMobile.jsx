@@ -20,11 +20,11 @@ class InfoMobile extends Component {
         if(this.state.checked === false){
             this.setState({ backgroundColor: 'lightGrey'});
             this.setState({ checked: true});
-            this.props.isChecked();
+            this.props.handleCheckService();
         }else{
             this.setState({ backgroundColor: 'white'});
             this.setState({ checked: false});
-            this.props.isUnchecked();
+            this.props.handleUncheckService();
         }
     }
 }

@@ -28,7 +28,7 @@ router.post('/', function (req, res) {
     const servicesList = req.body.service;
     let services = '';
 
-    for(var i = 1; i < servicesList.length; i++){
+    for(var i = 0; i < servicesList.length; i++){
         services += servicesList[i].title + ', '; 
     }
 
@@ -37,7 +37,7 @@ router.post('/', function (req, res) {
         from: 'lauta_3011@hotmail.com',
         to: 'luser3011@gmail.com',
         subject: 'Nueva reservacion',
-        text: name + ' quiere reservar un turno el dia ' + day + ' a la hora ' + time + '.Quiere ' + services +' Su numero de telefono es ' + phone 
+        text: name + ' quiere reservar un turno el dia ' + day + ' a la hora ' + time + '. Quiere ' + services +' Su numero de telefono es ' + phone 
     };
  
     // send mail with defined transport object

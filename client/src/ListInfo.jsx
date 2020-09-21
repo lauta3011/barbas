@@ -10,7 +10,6 @@ class ListInfo extends Component {
             <div className="ListInfo">
                 <div onMouseOver={this.showList} onMouseOut={this.hideList} onClick={this.checkService} className={this.props.serviceType} style={this.props.stylesheet}>
                     <div>
-                        {/* <input className="checkbox" type="checkbox" checked={this.state.checked} onChange={this.checkService} /> */}
                         <h2>{this.props.serviceType}</h2>
                         <div className="List">
                             {this.props.listService.map(service => (
