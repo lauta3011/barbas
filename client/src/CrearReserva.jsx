@@ -69,8 +69,20 @@ class CrearReserva extends Component {
 
                     <div className="inputs">
                         <div className="timePicker">
-                            <input type="number" min="10" max="21" placeholder="11" onChange={e => this.updateHour(e)}/>
-                            <span style={{marginRight:"30px"}}> : </span>
+                            {/* <input type="text" placeholder="hora" onChange={e => this.updateHour(e)}/> */}
+                            <select onChange={e => this.updateHour(e)}>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                            </select> 
+                            <span> : </span>
                             <select onChange={e => this.updateMin(e)}>
                                 <option>00</option>
                                 <option>30</option>
