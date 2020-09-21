@@ -104,17 +104,25 @@ html, body, #root{
         display: none;
     }
     .ModelMobile{
+        position: absolute;
+        overflow: auto;
+        top:650px;
         margin-top: 50px;
-        z-index: 2;
-        width: 100% !important;
+        z-index: 1;
+        width: 128% !important;
         text-align: center;
         display: inline-flex !important;
         padding-left: 15px;
         padding-right: 15px;
     }
-    .InfoMobile{
-        width: 33%;
-        padding-top: 20px;
+    .ListMobile{
+        display: flex;
+    }
+    .ListMobile h2{
+        position: absolute;
+    }
+    .InfoMobile h3{
+        font-size: 1.2rem;
     }
     .CrearReserva .Container{
         width: 100% !important;
@@ -123,7 +131,7 @@ html, body, #root{
     }
     
     .CrearReserva .Book{
-        margin-top: 50px;
+        margin-top: 290px;
     }
     .CrearReserva .Book button{
         width: 100% !important;
@@ -136,7 +144,6 @@ html, body, #root{
     }
     .ShowReservation .Container p{
         font-size: 25px;
-        margin-bottom: 150px;
         text-align: justify;
         padding: 0 20px 0 20px;
     }
@@ -219,7 +226,9 @@ html, body, #root{
 }
 
 .InfoMobile{
-    margin: 2px;
+    width: 100px;
+    padding: 20px 10px 20px 10px;
+    margin: 50px 2px 2px 2px;
     border-radius: 5px;
 }
 
