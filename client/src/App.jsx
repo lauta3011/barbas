@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from "./Header";
 import Services from './Services';
 import Showroom from './Showroom';
+import Catalog from './Catalog';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
 import './BaseStyle.css';
@@ -16,6 +17,7 @@ class App extends Component {
                 
                 <div className="ComponentContainer">
                     <Services />
+                    <Catalog />
                     <AboutUs />
                     <Showroom />
                     <Footer />
