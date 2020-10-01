@@ -56,15 +56,15 @@ class Servicios extends Component {
     }
 
     sendMessage = () =>{   
-        const info = { name: this.state.name, phone: this.state.phone, day: this.state.date, time: this.state.time, service: this.state.serviceType }        
+        const info = { type : 'Reservacion', name: this.state.name, phone: this.state.phone, day: this.state.date, time: this.state.time, service: this.state.serviceType }        
         const url = 'http://localhost:9000';
-console.log(info);
+
         axios.post(url + '/sendEmail ', info)
         .then((response)=>{
             if (response.data.msg === 'success'){
-                alert("Email sent, awesome!"); 
+                console.log('Email sent, awesome');
             }else if(response.data.msg === 'fail'){
-                alert("Oops, something went wrong. Try again")
+                console.log("Oops, something went wrong. Try again");
             }
         })
     }

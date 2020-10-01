@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import Product from './Product';
 import ProductInfo from './ProductInfo';
-import image from './imgs/header-img.JPEG';
+
+import mascara from './imgs/mascarilla.jpg';
+import maquina from './imgs/maquina.jpg';
+import gel from './imgs/gel.jpg';
+import wax from './imgs/wax.jpg';
+import aceite from './imgs/aceite.jpg';
 
 class Catalog extends Component {
     state = {  
-        products : [{title:'MASCARA CARBONICA', desc:'ni idea es una mascara negra supuestamente hecha de carbon', price:'$200', img:image},
-                    {title:'MASCARA CARBONICA 2', desc:'ni idea es una mascara negra supuestamente hecha de carbon', price:'$200', img:image},
-                    {title:'MASCARA CARBONICA 3', desc:'ni idea es una mascara negra supuestamente hecha de carbon', price:'$200', img:image},
-                    {title:'MASCARA CARBONICA 4', desc:'ni idea es una mascara negra supuestamente hecha de carbon', price:'$200', img:image},
-                    {title:'MASCARA CARBONICA 5', desc:'ni idea es una mascara negra supuestamente hecha de carbon', price:'$200', img:image},
-                    {title:'MASCARA CARBONICA 6', desc:'ni idea es una mascara negra supuestamente hecha de carbon', price:'$200', img:image}
+        products : [{title:'MASCARA FACIAL', desc:'ayuda en el cuidado de la belleza y salud facial', price:'$120 c/u', img:mascara},
+                    {title:'MAQUINA WHAL', desc:'maquina para cortar pelo o barba marca wahl', price:'$8000', img:maquina},
+                    {title:'GEL', desc:'hidrata el cabello, dejandolo brillante y firme durante todo el dia', price:'$300', img:gel},
+                    {title:'CERA CAPILAR', desc:'le da forma a tu cabello sin endurecerlo', price:'$400', img:wax},
+                    {title:'POMADA MODELADORA', desc:'hidrata, nutre y fija tu barba o bigotes solo con tus dedos', price:'$200', img:aceite},
+                    {title:'MASCARA CARBONICA 6', desc:'ni idea es una mascara negra supuestamente hecha de carbon', price:'$200', img:'image'}
                 ],
         showModal : 'none',
         prodTitle : '',
