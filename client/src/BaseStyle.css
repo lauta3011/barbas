@@ -122,6 +122,7 @@ html, body, #root{
         width: 100% !important;
         height: 1201px !important;
         position: relative !important;
+        box-shadow: 0 0 0 0 !important;
     }
     
     .CrearReserva .Book{
@@ -145,6 +146,59 @@ html, body, #root{
         width: 128% !important;
         height: 1000px;
         top: 1200px !important; 
+    }
+    .Catalog .Container{
+        overflow: scroll;
+        padding-top: 10% !important;
+    }
+    .Catalog .ProductList{
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        width: 3000px !important;
+        height: 600px !important;
+    }
+    .Catalog .ProductList .Product{
+        overflow: hidden;
+        margin-left: 0 !important;
+        margin-right: 15px !important;
+    }
+    .Catalog .ProductList .Product img{
+        width: 140%;
+    }
+    .ProductInfo img{
+        width: 100% !important;
+    }
+    .Catalog .ProductInfo .Container{
+        background-color: transparent !important;
+        margin-left: 0 !important;
+    }
+    .Catalog .ProductInfo .Container .Info{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .Catalog .ProductInfo .Container .Transaction{
+        margin-top: 165px !important;
+    }
+    .Catalog .ProductInfo .Container .Transaction .InsertedInfo p{
+        color: #ffffff;
+    }
+    .Catalog .ProductInfo .Container .Transaction .InsertedInfo input, textarea{
+        width: 75% !important;
+    }
+    .Catalog .ProductInfo .Container .Transaction .ConfirmInfo{
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding-top: 35px;
+    }
+    .Catalog .ProductInfo .Container .Buttons{
+        position: absolute;
+        background-color: #ffffff !important;
+        left: 0;
+        bottom: 0;
+        margin-top: 0;
     }
     .AboutUs{
         top: 2200px !important;
@@ -419,6 +473,9 @@ select{
 
 .Product{
     width: 25%;
+    height: 270px;
+    color: #ffffff;
+    background-size: cover;
     opacity: .7;
     transition: .5s;
     margin-left: 6%;
@@ -435,10 +492,10 @@ select{
 
 .ProductInfo{
     position: fixed;
-    top: 10%;
-    left: 15%;
-    width: 75%;
-    height: 80%;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
     background-size: cover;
     text-align: center;
     border-radius: 5px;
@@ -446,6 +503,14 @@ select{
     padding: 0 10px 0 10px;
     box-shadow: 0px 0px 17px 2px black;
     z-index: 2;
+}
+
+.ProductInfo img{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
 }
 
 .ProductInfo .Container{
@@ -458,7 +523,7 @@ select{
 
 .ProductInfo .Container .Info{
     width: 100%;
-    margin-top: -25px;
+    margin-top: -1px;
     padding: 15px;
     background-color: #262626;
 }
@@ -482,7 +547,8 @@ select{
 }
 
 .ProductInfo .InsertedInfo{
-    width: 100%;
+    width: 90%;
+    margin-right: 5%;
     margin-top: 2%;
 }
 
@@ -508,7 +574,8 @@ select{
 }
 
 .ProductInfo .ConfirmInfo{
-    width: 100%;
+    width: 85%;
+    margin-right: 2%;
     margin-top: 10%;
 }
 

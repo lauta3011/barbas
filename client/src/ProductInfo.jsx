@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class ProductInfo extends Component {
     state = {
@@ -9,7 +10,8 @@ class ProductInfo extends Component {
     }
     render() { 
         return (  
-            <div style={{display:this.props.handleShowModal, backgroundImage:'url('+ this.props.image +')'}} className="ProductInfo">
+        <div style={{display:this.props.handleShowModal/*, backgroundImage:'url('+ this.props.image +')'*/}} className="ProductInfo">
+                <img src={this.props.image} alt={this.props.title}/>
                 <div className="Container">
                     <div className="Info">
                         <div>
@@ -85,8 +87,22 @@ class ProductInfo extends Component {
             this.props.handleHideModal();
             this.setState({ confirmedInfo : false});
             document.querySelector(".InfoContainer").style.transform = "translateX(0%)";
-            console.log("confirmar reserva mandar mail");
+            this.sendMessage();
         }
+    }
+
+    sendMessage = () =>{   
+        const info = { type : 'Producto', name: this.state.name, phone: this.state.phone, extraComment: this.state.extraComment, productName : this.props.title, price : this.props.desc };        
+        const url = 'http://localhost:9000';
+        
+        axios.post(url + '/sendEmail ', info)
+        .then((response)=>{
+            if (response.data.msg === 'success'){
+                console.log("Email sent, awesome!"); 
+            }else if(response.data.msg === 'fail'){
+                console.log("Oops, something went wrong. Try again")
+            }
+        })
     }
 }
  
