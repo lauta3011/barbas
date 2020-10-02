@@ -23,21 +23,41 @@ var transporter = nodemailer.createTransport({
 router.post('/', function (req, res) {
     const name = req.body.name;
     const phone = req.body.phone;
-    const day = req.body.day;
-    const time = req.body.time;
-    const servicesList = req.body.service;
-    let services = '';
+    let emailText = '';
+    let subject = '';
 
-    for(var i = 0; i < servicesList.length; i++){
-        services += servicesList[i].title + ', '; 
+    if(req.body.type === 'Reservacion'){
+        const day = req.body.day;
+        const time = req.body.time;
+        const servicesList = req.body.service;
+        let services = '';
+    
+        for(var i = 0; i < servicesList.length; i++){
+            services += servicesList[i].title + ', '; 
+        }
+        subject = req.body.type;
+        emailText = name + ' quiere reservar un turno el dia ' + day + ' a la hora ' + time + '. Quiere ' + services +' Su numero de telefono es ' + phone ;
+    
+    }else if(req.body.type === 'Producto') {
+        const comment = req.body.extraComment;
+        const product = req.body.productName;
+        const price = req.body.price;
+        
+        subject = req.body.type;    
+        emailText = name + ' quiere reservar el producto ' + product + ' al precio ' + price + '. En caso de que haya o no haya stock de este producto, avisarle al numero ' + phone ;
+        if(comment !== ''){
+            emailText += '. El usuario dejo este comentario: "' + comment + '".';
+        }else{
+            emailText += '. El usuario no dejo comentarios extra.';
+        }
     }
 
     // setup email data with unicode symbols
     var mailOptions = {
         from: 'lauta_3011@hotmail.com',
         to: 'luser3011@gmail.com',
-        subject: 'Nueva reservacion',
-        text: name + ' quiere reservar un turno el dia ' + day + ' a la hora ' + time + '. Quiere ' + services +' Su numero de telefono es ' + phone 
+        subject: subject,
+        text: emailText
     };
  
     // send mail with defined transport object

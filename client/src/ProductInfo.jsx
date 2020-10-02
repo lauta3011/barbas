@@ -92,7 +92,7 @@ class ProductInfo extends Component {
     }
 
     sendMessage = () =>{   
-        const info = { type : 'Producto', name: this.state.name, phone: this.state.phone, extraComment: this.state.extraComment, productName : this.props.title, price : this.props.desc };        
+        const info = { type : 'Producto', name: this.state.name, phone: this.state.phone, extraComment: this.state.extraComment, productName : this.props.title, price : this.props.price };        
         const url = 'http://localhost:9000';
         
         axios.post(url + '/sendEmail ', info)

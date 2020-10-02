@@ -7,6 +7,7 @@ import maquina from './imgs/maquina.jpg';
 import gel from './imgs/gel.jpg';
 import wax from './imgs/wax.jpg';
 import aceite from './imgs/aceite.jpg';
+import plus from './imgs/plus-symbol.png';
 
 class Catalog extends Component {
     state = {  
@@ -15,7 +16,7 @@ class Catalog extends Component {
                     {title:'GEL', desc:'hidrata el cabello, dejandolo brillante y firme durante todo el dia', price:'$300', img:gel},
                     {title:'CERA CAPILAR', desc:'le da forma a tu cabello sin endurecerlo', price:'$400', img:wax},
                     {title:'POMADA MODELADORA', desc:'hidrata, nutre y fija tu barba o bigotes solo con tus dedos', price:'$200', img:aceite},
-                    {title:'MASCARA CARBONICA 6', desc:'ni idea es una mascara negra supuestamente hecha de carbon', price:'$200', img:'image'}
+                    {title:'SOLICITAR PRODUCTO', desc:'una vez procesado intentaremos conseguir el producto y nos comunicaremos contigo', price:'-', img:plus}
                 ],
         showModal : 'none',
         prodTitle : '',
@@ -29,6 +30,7 @@ class Catalog extends Component {
             <div className="Catalog">
                 <div className="Container">
                     <h2>PRODUCTOS</h2>
+                    <p style={{width:"40%", marginLeft:"30%"}}>las fotos de los productos son meramente ilustrativas, las marcas de estos pueden variar segun el stock</p>
                     <div className="ProductList">
                         {this.state.products.map(product => (
                             <Product handleOnClick={this.openInfo} title={product.title} desc={product.desc} price={product.price} img={product.img}/>
