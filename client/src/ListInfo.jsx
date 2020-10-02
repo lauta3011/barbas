@@ -24,12 +24,12 @@ class ListInfo extends Component {
 
     hideList = () => {
         document.querySelector("."+this.props.serviceType + " .List").style.opacity = 0;        
-        document.querySelector("."+this.props.serviceType + " h2").style.marginBottom = "0px";
+        document.querySelector("."+this.props.serviceType + " h2").style.transform = "translateY(5px)";
     }
 
     showList = () =>{
         document.querySelector("."+this.props.serviceType + " .List").style.opacity = .9;
-        document.querySelector("."+this.props.serviceType + " h2").style.marginBottom = "35px";
+        document.querySelector("."+this.props.serviceType + " h2").style.transform = "translateY(-5px)";
     }
 
     checkService = (title, desc) =>{

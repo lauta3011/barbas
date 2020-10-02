@@ -11,7 +11,6 @@ class AboutUs extends Component {
                         <h2>DONDE PODES ENCONTRARNOS</h2>
                         <p>estamos localizados en el centro de Pan de Azucar, en Felix de Lizarza e Ituzaingo</p>
                         <MapContainer /><br />
-                        <h3>TAMBIEN PODES LLAMAR AL 095491017</h3>         
                     </div>
                 </div>
             </div>
