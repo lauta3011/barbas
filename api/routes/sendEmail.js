@@ -9,7 +9,7 @@ router.get('/', function(req, res, next){
 
 // create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport({
-    host: 'smtp.live.com',
+    host: "smtp-mail.outlook.com",
     port: 587,
     auth: {
         user: creds.USER,
@@ -54,8 +54,8 @@ router.post('/', function (req, res) {
 
     // setup email data with unicode symbols
     var mailOptions = {
-        from: 'lauta_3011@hotmail.com',
-        to: 'luser3011@gmail.com',
+        from: 'romeo16nat@hotmail.com',
+        to: 'romeo16nat@hotmail.com',
         subject: subject,
         text: emailText
     };
