@@ -57,7 +57,7 @@ class Servicios extends Component {
 
     sendMessage = () =>{   
         const info = { type : 'Reservacion', name: this.state.name, phone: this.state.phone, day: this.state.date, time: this.state.time, service: this.state.serviceType }        
-        const url = 'http://localhost:9000';
+        const url = 'http://localhost:5000';
 
         axios.post(url + '/sendEmail ', info)
         .then((response)=>{
