@@ -93,7 +93,7 @@ class ProductInfo extends Component {
 
     sendMessage = () =>{   
         const info = { type : 'Producto', name: this.state.name, phone: this.state.phone, extraComment: this.state.extraComment, productName : this.props.title, price : this.props.price };        
-        const url = 'http://localhost:5000';
+        const url = 'http://https://barbas-barbershop.herokuapp.com';
         
         axios.post(url + '/sendEmail ', info)
         .then((response)=>{
