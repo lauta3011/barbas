@@ -9,9 +9,9 @@ router.get('/', function(req, res, next){
 
 // create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com",
-    port: 587,
-    auth: {
+    host: 'smtp.gmail.com',
+    port: 465,
+      auth: {
         user: creds.USER,
         pass: creds.PASS
     },
@@ -54,8 +54,8 @@ router.post('/', function (req, res) {
 
     // setup email data with unicode symbols
     var mailOptions = {
-        from: 'romeo16nat@hotmail.com',
-        to: 'romeo16nat@hotmail.com',
+        from: 'barbas.barbershop1@gmail.com',
+        to: 'barbas.barbershop1@gmail.com',
         subject: subject,
         text: emailText
     };
