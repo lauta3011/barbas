@@ -10,7 +10,7 @@ router.get('/', function(req, res, next){
 // create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 465,
+    port: 587,
     secure: false,
     requireTLS: true,
       auth: {
