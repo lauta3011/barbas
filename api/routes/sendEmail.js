@@ -11,12 +11,11 @@ router.get('/', function(req, res, next){
 var transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
+    secure: false,
+    requireTLS: true,
       auth: {
         user: creds.USER,
         pass: creds.PASS
-    },
-    tls: {
-        rejectUnauthorized: false
     }
 });
 
