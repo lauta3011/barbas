@@ -64,13 +64,13 @@ html, body, #root{
 }
 @media (max-width: 800px){
     #root{
-        height: 128% !important;
+        height: 100% !important;
     }
     .ComponentContainer{
         top:97% !important;
     }
     .Header, .Servicios, .AboutUs, .Showroom, .Footer{
-        width: 128% !important;
+        width: 100% !important;
     }
     .Container{
         width: 100% !important;
