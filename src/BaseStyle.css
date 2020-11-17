@@ -81,7 +81,7 @@ html, body, #root{
         width: 100%;
     }
     .Header .Logo{
-        left:40% !important;
+        left:33% !important;
     }
     .Servicios{
         height: 1201px !important;
@@ -240,7 +240,7 @@ html, body, #root{
         margin-top: 0 !important;
     }
     .Footer h3{
-        margin-top: 35% !important;
+        margin-top: 40% !important;
     }
 }
 
