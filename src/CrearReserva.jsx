@@ -10,8 +10,8 @@ class CrearReserva extends Component {
         name:"",
         phone:"",
         date: "",
-        hour:"",
-        min:""
+        hour:"10",
+        min:"00"
      }
 
      handleCreateReservation = (name, phone, date, hour, min) => {
@@ -70,7 +70,7 @@ class CrearReserva extends Component {
                     <div className="inputs">
                         <div className="timePicker">
                             {/* <input type="text" placeholder="hora" onChange={e => this.updateHour(e)}/> */}
-                            <select onChange={e => this.updateHour(e)}>
+                            <select value={this.state.hour} onChange={e => this.updateHour(e)}>
                                 <option>10</option>
                                 <option>11</option>
                                 <option>13</option>
@@ -83,7 +83,7 @@ class CrearReserva extends Component {
                                 <option>20</option>
                             </select> 
                             <span> : </span>
-                            <select onChange={e => this.updateMin(e)}>
+                            <select value={this.state.min} onChange={e => this.updateMin(e)}>
                                 <option>00</option>
                                 <option>30</option>
                             </select> <br/>
