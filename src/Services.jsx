@@ -39,7 +39,7 @@ class Servicios extends Component {
 
     createReservation = (name, phone, date, hour, min) => {
         let time = hour + " " + min;
-        let num = 59895491017;
+        let num = 59891453715;
         
         
         if(this.state.serviceType.length > 0){
