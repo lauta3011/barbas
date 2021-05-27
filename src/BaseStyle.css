@@ -64,13 +64,13 @@ html, body, #root{
 }
 @media (max-width: 800px){
     #root{
-        height: 128% !important;
+        height: 100% !important;
     }
     .ComponentContainer{
         top:97% !important;
     }
     .Header, .Servicios, .AboutUs, .Showroom, .Footer{
-        width: 128% !important;
+        width: 100% !important;
     }
     .Container{
         width: 100% !important;
@@ -81,7 +81,7 @@ html, body, #root{
         width: 100%;
     }
     .Header .Logo{
-        left:40% !important;
+        left:33% !important;
     }
     .Servicios{
         height: 1201px !important;
@@ -103,7 +103,7 @@ html, body, #root{
         top:650px;
         margin-top: 50px;
         z-index: 1;
-        width: 128% !important;
+        width: 100% !important;
         text-align: center;
         display: inline-flex !important;
         padding-left: 15px;
@@ -143,7 +143,7 @@ html, body, #root{
         padding: 0 20px 0 20px;
     }
     .Catalog{
-        width: 128% !important;
+        width: 100% !important;
         height: 1000px;
         top: 1200px !important; 
     }
@@ -240,7 +240,7 @@ html, body, #root{
         margin-top: 0 !important;
     }
     .Footer h3{
-        margin-top: 35% !important;
+        margin-top: 40% !important;
     }
 }
 
