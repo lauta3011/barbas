@@ -7,9 +7,9 @@ class ListInfoMobile extends Component {
         return (  
             <div className="ListInfoMobile">
                 <div className="ListMobile">
-        <h2>{this.props.serviceType}</h2>
+                    <h2>{this.props.serviceType}</h2>
                     {this.props.listService.map(service => (
-                        <InfoMobile handleCheckService={this.checkService} handleUncheckService={this.uncheckService} title={service.title} desc={service.desc}/>
+                        <InfoMobile handleCheckService={() => this.checkService(service.title, service.desc)} handleUncheckService={() => this.uncheckService(service.title, service.desc)} title={service.title} desc={service.desc}/>
                     ))}
                 </div>
             </div>
