@@ -41,6 +41,7 @@ class Servicios extends Component {
         let time = hour + " " + min;
         let num = 59891453715;
         
+        
         if(this.state.serviceType.length > 0){
             let texto = 'Hola! quiero agendarme para el ' + date + ' a la hora ' + time + '. Queria hacerme ';
             this.state.serviceType.map((s) => {
